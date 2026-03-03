@@ -1,0 +1,29 @@
+{
+  "name": "knoboa",
+  "version": "1.0.0",
+  "description": "Wingspan Tracker App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "watch": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./src/css/tailwind.css --watch",
+    "start": "concurrently \"npm run dev\" \"npm run watch\""
+  },
+  "keywords": [],
+  "author": "Kristin Noboa",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.23",
+    "lite-server": "^2.6.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.7.1",
+    "ag-charts-community": "^13.1.0",
+    "ag-grid-community": "^35.1.0",
+    "concurrently": "^9.2.1",
+    "csv-parse": "^6.1.0",
+    "live-server": "^1.2.2"
+  }
+}

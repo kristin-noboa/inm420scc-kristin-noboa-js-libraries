@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'SN Pro', sans-serif;
+}
+
+/* Glide carousel overrides */
+.glide__arrow {
+  background-color: rgba(244, 114, 182, 0.85) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+}
+.glide__arrow:hover {
+  background-color: rgba(236, 72, 153, 0.95) !important;
+}
+.glide__bullet {
+  background-color: #f9a8d4 !important;
+  border: none !important;
+  width: 10px;
+  height: 10px;
+  box-shadow: none !important;
+}
+.glide__bullet--active {
+  background-color: #ec4899 !important;
+}
+.glide__bullets {
+  bottom: -28px !important;
+}
+.glide__slide {
+  transition: transform 0.05s linear, opacity 0.05s linear;
+  will-change: transform, opacity;
+}
